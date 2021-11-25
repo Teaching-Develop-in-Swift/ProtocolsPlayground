@@ -6,7 +6,8 @@ class Shoe: CustomStringConvertible {
     let color: String
     let size: Int
     let hasLaces: Bool
-
+    /// This will also satisfy the `CustomStringConvertible` protocol, but isn't very useful
+//    let description = "A shoe"
     var description: String {
         return "A \(self.color) shoe, size \(self.size) "
     }
